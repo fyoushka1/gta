@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <header class="header">
+                <img class="header__logo" src="/images/logo.png" alt="">
+            </header>
+            <div class="singup">
+
+                <button data-modal-btn="modal__login" class="btn__singup">
+                    Вход
+                </button>
+
+                <!-- модальное окно вход -->
+                <div data-modal-window="modal__login" class="modal__login">
+                    <div class="modal__login-content">
+                        <h3 class="modal__login-title">
+                            Вход
+                        </h3>
+                        <form class="form__modal">
+                            <input type="text" class="modal__login-login" placeholder="Логин*">
+                            <input type="text" class="modal__login-password" placeholder="Пароль*">
+                        </form>
+                        <a href="#" class="modal__login-forget">
+                            Забыли пароль
+                        </a>
+                        <button class="modal__login-btn">
+                            Вход
+                        </button>
+
+                        <div class="close__modal">&times;</div>
+                    </div>
+                </div>
+                <button data-modal-btn="modal__singup" class="btn__login">
+                    Регистрация
+                </button>
+
+                <!-- модальное окно регистрация -->
+                <div data-modal-window="modal__singup" class="modal__singup">
+                    <div class="modal__singup-content">
+                        <h3 class="modal__login-title">
+                            Регистрация
+                        </h3>
+                        <form class="form__modal">
+                            <input type="text" class="modal__login-login" placeholder="Логин*">
+                            <input type="text" class="modal__login-password-2" placeholder="Пароль*">
+                            <input type="text" class="modal__login-repit" placeholder="Повторите пароль*">
+                            <input type="text" class="modal__login-email" placeholder="Эл.Почта*  ">
+                        </form>
+
+                        <div class="close__modal">&times;</div>
+                        <button class="modal__login-btn">
+                            Регистрация
+                        </button>
+                    </div>
+                </div>
+                <footer class="footer">
+                    <div class="footer__social-inner">
+                        <a href="#" class="footer__social-item-link">
+                            <img src="/images/free-icon-vk-social-network-logo-25684 1.svg" alt=""
+                                class="footer__social-item-img-1">
+                        </a>
+                        <a href="#" class="footer__social-item-link">
+                            <img src="/images/free-icon-internet-1011322 1.svg" alt=""
+                                class="footer__social-item-img-2">
+                        </a>
+                        <a href="#" class="footer__social-item-link">
+                            <img src="/images/discord 1.svg" alt="" class="footer__social-item-img-3">
+                        </a>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <script src="/javascript/main.js"></script>
+</body>
+
+</html>
